@@ -120,7 +120,7 @@ public class CatalogManager implements CourseCatalog {
 		if (c == null) {
 			throw new DuplicateCourseException("Cannot add a null Course");
 		}
-		String code = c.getCourseCode();
+		String code = c.getCoursecode();
 		if (courses.containsKey(code)) {
 			throw new DuplicateCourseException("Duplicate course code " + code);
 		}
@@ -137,7 +137,7 @@ public class CatalogManager implements CourseCatalog {
 		if (c == null) {
 			throw new CourseNotFoundException("Cannot update a null Course");
 		}
-		Course oldC = getCourse(c.getCourseCode());
+		Course oldC = getCourse(c.getCoursecode());
 		if (c.equals(oldC)) {
 			// no change - nothing to do
 			return c;
@@ -146,9 +146,9 @@ public class CatalogManager implements CourseCatalog {
 		if ( oldC.getProfessor() != c.getProfessor() ) {
 			addProfessor(c.getProfessor() );
 		}
-		courses.put(c.getCourseCode(), c);
+		courses.put(c.getCoursecode(), c);
 		// retrieve again to get derived fields, if there are any
-		return getCourse(c.getCourseCode());
+		return getCourse(c.getCoursecode());
 	}
 
 	// Rewrite to use JPA API for assignment 4

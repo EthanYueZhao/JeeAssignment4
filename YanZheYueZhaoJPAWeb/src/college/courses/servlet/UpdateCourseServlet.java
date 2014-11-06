@@ -62,7 +62,7 @@ public class UpdateCourseServlet extends HttpServlet {
 						}	
 					case "Delete": {
 						CatalogManager cm = CatalogManager.getInstance();
-						cm.deleteCourse( course.getCourseCode() );
+						cm.deleteCourse( course.getCoursecode() );
                         updateBanner();
 						request.getRequestDispatcher("/main.jsp").forward(request,  response);
 						return;
@@ -89,7 +89,7 @@ public class UpdateCourseServlet extends HttpServlet {
 		if (courseTitle != null) {
 			courseTitle = courseTitle.trim();
 		}
-		course.setCourseTitle(courseTitle);
+		course.setCoursetitle(courseTitle);
 		String profName = request.getParameter("profName");
 		if (profName == null || profName.equals("TBA")) {
 			course.setProfessor(null);
