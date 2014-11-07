@@ -5,9 +5,12 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 
 /**
@@ -15,15 +18,17 @@ import javax.persistence.OneToMany;
  * 
  */
 @Entity
+@Table(name="PROFESSOR", schema="COLLEGE")
 @NamedQuery(name="Professor.findAll", query="SELECT p FROM Professor p")
 public class Professor implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int profid;
-	@Column(name="FAMILYNAME")
+	@Column(name = "FAMILYNAME", nullable = false)
 	private String lastname;
-	@Column(name="GIVENNAME")
+	@Column(name = "GIVENNAME", nullable = false)
 	private String firstname;
 
 	//bi-directional many-to-one association to Course

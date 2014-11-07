@@ -6,8 +6,7 @@
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:/CollegeDS</jta-data-source>
-		<class>college.courses.data.Course</class>
-		<class>college.courses.data.Professor</class>
+
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<property name="jboss.entity.manager.factory.jndi.name"
