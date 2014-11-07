@@ -15,12 +15,13 @@ public class Course implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String coursecode;
-
+	@Column(name="COURSECODE")
+	private String courseCode;
+	@Column(name="CAPACITY")
 	private int capacity;
-
-	private String coursetitle;
-
+	@Column(name="COURSETITLE")
+	private String courseTitle;
+	@Column(name="ENROLLED")
 	private int enrolled;
 
 	//bi-directional many-to-one association to Professor
@@ -39,13 +40,14 @@ public class Course implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getCoursecode() {
-		return this.coursecode;
+	public String getCourseCode() {
+		return courseCode;
 	}
 
-	public void setCoursecode(String coursecode) {
-		this.coursecode = coursecode;
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
+
 
 	public int getCapacity() {
 		return this.capacity;
@@ -55,13 +57,15 @@ public class Course implements Serializable {
 		this.capacity = capacity;
 	}
 
-	public String getCoursetitle() {
-		return this.coursetitle;
+	public String getCourseTitle() {
+		return courseTitle;
 	}
 
-	public void setCoursetitle(String coursetitle) {
-		this.coursetitle = coursetitle;
+	public void setCourseTitle(String courseTitle) {
+		this.courseTitle = courseTitle;
 	}
+
+
 
 	public int getEnrolled() {
 		return this.enrolled;

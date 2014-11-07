@@ -22,7 +22,7 @@
 <td><b>
 <c:choose> 
 <c:when test = "${sessionScope.course.professor == null}" >Not yet assigned</c:when>
-<c:otherwise>${sessionScope.course.professor}</c:otherwise>
+<c:otherwise>${sessionScope.course.professor.firstname} ${sessionScope.course.professor.lastname}</c:otherwise>
 </c:choose>
 </b></td>
 </tr><tr>

@@ -45,21 +45,22 @@ public class Professor implements Serializable {
 		this.profid = profid;
 	}
 
-	public String getFamilyname() {
-		return this.lastname;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public void setFamilyname(String familyname) {
-		this.lastname = familyname;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
-	public String getGivenname() {
-		return this.firstname;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setGivenname(String givenname) {
-		this.firstname = givenname;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
+
 
 	public List<Course> getCourses() {
 		return this.courses;
