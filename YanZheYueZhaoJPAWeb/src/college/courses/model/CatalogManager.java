@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.persistence.EntityManagerFactory;
+
 import college.courses.data.Course;
 import college.courses.data.Professor;
 import college.courses.exceptions.CourseNotFoundException;
@@ -13,66 +17,18 @@ import college.courses.exceptions.DuplicateCourseException;
 
 public class CatalogManager implements CourseCatalog {
 
-	// delete for assignment 4. Class does not need to be a singleton
-	private static CatalogManager cm = null;
-	
-	// delete for assignment 4: replaced by COURSE table
-	private Map<String, Course> courses = null;
-	
-	// delete for assignment 4: replaced by PROFESSOR table
-	private List<Professor> professors = null;
-	
-	// delete for assignment 4: class does not need to be a singleton
-	public synchronized static CatalogManager getInstance() {
-		if (cm == null) {
-			cm = new CatalogManager();
-			cm.initialize();
+	private static EntityManagerFactory emf;
+	static {
+		try {
+			InitialContext ctx = new InitialContext();
+			emf = (EntityManagerFactory) ctx.lookup("java:/CollegeEMF");
+		} catch (NamingException ne) {
+			ne.printStackTrace();
 		}
-		return cm;
 	}
 
-	// replace with public default constructor
-	private CatalogManager() {
-		if (courses == null) {
-			courses = new ConcurrentHashMap<String, Course>();
-			professors = new ArrayList<Professor>();
-		}
-	}
-	
-	// delete for assignment 4: data base is ready to use
-	private void initialize() {
-		System.out.println("Building course catalog");
-		try {
-			// replace up to catch to add courses you are taking this term
-			Professor professor = new Professor("Paula", "McMillan");
-			cm.addCourse(new Course("COMP303", "Java EE Programming", professor));
-			cm.addCourse(new Course("COMP311", "Software Testing and QA"));
-			professor = new Professor("Peter", "Voldner");
-			cm.addCourse(new Course("SWS310",
-					"Software Standards, Testing and Maintenance", professor));
-			professor = new Professor("Michael", "Marovich");
-			cm.addCourse(new Course("SWS311", "Programming Network Systems" , professor)) ;
-			cm.addCourse(new Course("SWS312", "Database Programming"));
-		} catch (Exception e) {
-			System.out.println(e.getClass().getName() + ": " + e.getMessage());
-		}
-		System.out.println();
-		System.out.println("Testing get all courses");
-		try {
-			System.out.println("Course catalog:");
-			Collection<Course> courses = ((CatalogManager) cm).getAllCourses();
-			for (Course course : courses) {
-				System.out.println(course);
-			}
-			System.out.println("Lsting all professors" );
-			for (Professor p : cm.getProfessorList() ) {
-				System.out.println(p);			
-			}
-			System.out.println("done");
-			
-		} catch (Exception e) {
-			System.out.println(e.getClass().getName() + ": " + e.getMessage());
-		}
+	//public default constructor
+	public CatalogManager() {
 	}
 	
 	// replace with professor manager in assignment 4

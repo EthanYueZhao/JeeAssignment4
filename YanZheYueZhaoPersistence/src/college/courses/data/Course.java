@@ -10,22 +10,25 @@ import javax.persistence.*;
  * 
  */
 @Entity
+@Table(name="COURSE", schema="COLLEGE")
 @NamedQuery(name="Course.findAll", query="SELECT c FROM Course c")
 public class Course implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "COURSECODE", nullable = false)
 	private String coursecode;
 
 	private int capacity;
 
+	@Column(name = "COURSETITLE", nullable = false)
 	private String coursetitle;
 
 	private int enrolled;
 
 	//bi-directional many-to-one association to Professor
 	@ManyToOne
-	@JoinColumn(name="PROFID")
+	@JoinColumn(name="PROFID", referencedColumnName="PROFID")
 	private Professor professor;
 
 	public Course() {
