@@ -37,13 +37,24 @@ public class Course implements Serializable {
 	public Course() {
 	}
 
-	public Course(String string, String string2, Professor professor2) {
-		// TODO Auto-generated constructor stub
+
+
+	public Course(String courseCode, String courseTitle, Professor professor) {
+		super();
+		this.courseCode = courseCode;
+		this.courseTitle = courseTitle;
+		this.professor = professor;
 	}
 
-	public Course(String string, String string2) {
-		// TODO Auto-generated constructor stub
+
+
+	public Course(String courseCode, String courseTitle) {
+		super();
+		this.courseCode = courseCode;
+		this.courseTitle = courseTitle;
 	}
+
+
 
 	public String getCourseCode() {
 		return courseCode;

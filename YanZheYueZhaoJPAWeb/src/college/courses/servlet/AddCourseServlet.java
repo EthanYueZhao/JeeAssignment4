@@ -44,14 +44,17 @@ public class AddCourseServlet extends HttpServlet {
 			throws InvalidDataException {
 		Course course = null;
 		String courseCode = request.getParameter("courseCode");
+		
 		if (courseCode != null) {
 			courseCode = courseCode.trim().toUpperCase();
 		}
+		
 		String courseTitle = request.getParameter("courseTitle");
 		if (courseTitle != null) {
 			courseTitle = courseTitle.trim();
 		}
 		course = new Course(courseCode, courseTitle);
+		
 		String profName = request.getParameter("profName");
 		if (profName == null || profName.equals("TBA")) {
 			course.setProfessor(null);
@@ -60,6 +63,7 @@ public class AddCourseServlet extends HttpServlet {
 			Professor professor = new Professor(names[0], names[1]);
 			course.setProfessor(professor);
 		}
+		
 		return course;
 	}
 
@@ -73,6 +77,7 @@ public class AddCourseServlet extends HttpServlet {
 		try {
 			Course course = getCourseData(request);
 			CatalogManager cm = CatalogManager.getInstance();
+			
 			cm.addCourse(course);
 			session.setAttribute("course", course);
 			updateBanner();

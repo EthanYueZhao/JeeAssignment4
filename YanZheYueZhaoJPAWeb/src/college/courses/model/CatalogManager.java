@@ -143,33 +143,40 @@ public class CatalogManager implements CourseCatalog {
 		if (c == null) {
 			throw new DuplicateCourseException("Cannot add a null Course");
 		}
-//		String code = c.getCourseCode();
-//		if (courses.containsKey(code)) {
-//			throw new DuplicateCourseException("Duplicate course code " + code);
-//		}
-//		if (c.getProfessor() != null) {
-//			addProfessor(c.getProfessor());
-//		}
-//		courses.put(code, c);
-		
-//		if(c.getProfessor()==null){
-//			Professor p=new Professor("no","name");
-//			c.setProfessor(p);
-//		}
-		
+		// String code = c.getCourseCode();
+		// if (courses.containsKey(code)) {
+		// throw new DuplicateCourseException("Duplicate course code " + code);
+		// }
+		// if (c.getProfessor() != null) {
+		// addProfessor(c.getProfessor());
+		// }
+		// courses.put(code, c);
+
+		// if(c.getProfessor()==null){
+		// Professor p=new Professor("no","name");
+		// c.setProfessor(p);
+		// }
+
 		EntityManager em = emf.createEntityManager();
 		
-		System.out.println(c.getCourseCode()+"b");
+		Course course = em.find(Course.class, c.getCourseCode());
+		if (course != null) {
+			throw new DuplicateCourseException("Duplicate course code "
+					+ c.getCourseCode());
+		} else {
+			EntityTransaction et = em.getTransaction();
+			et.begin();
+//			course = new Course(c.getCourseCode(), c.getCourseTitle(),
+//					c.getProfessor());
+			
+			em.persist(c);
+			
+			et.commit();
+			em.close();
+			
+		}
+	
 
-		EntityTransaction et=em.getTransaction();
-		et.begin();
-		System.out.println(c.getCourseCode()+"bb");
-		em.persist(c);
-		System.out.println(c.getCourseCode()+"bbb");
-		et.commit();
-		System.out.println(c.getCourseCode()+"bbbb");
-		em.close();
-		
 		return c;
 	}
 
@@ -179,36 +186,35 @@ public class CatalogManager implements CourseCatalog {
 		if (c == null) {
 			throw new CourseNotFoundException("Cannot update a null Course");
 		}
-		Course oldC = getCourse(c.getCourseCode());
-		if (c.equals(oldC)) {
-			// no change - nothing to do
+
+		EntityManager em = emf.createEntityManager();
+		Course course = em.find(Course.class, c.getCourseCode());
+		if (course == null) {
+			throw new CourseNotFoundException("No Course with id "
+					+ c.getCourseCode());
+		}
+		if (course.equals(c)) {
 			return c;
 		}
-//		// insert changed course
-//		if (oldC.getProfessor() != c.getProfessor()) {
-//			addProfessor(c.getProfessor());
-//		}
-//		courses.put(c.getCourseCode(), c);
-//		// retrieve again to get derived fields, if there are any
-//		return getCourse(c.getCourseCode());
-		
-		EntityManager em = emf.createEntityManager();
-		
-		System.out.println(c.getCourseCode()+"b");
+
+		System.out.println(c.getCourseCode() + "b");
 
 		try {
-			EntityTransaction et=em.getTransaction();
+			EntityTransaction et = em.getTransaction();
 			et.begin();
-			System.out.println(c.getCourseCode()+"bb");
-			em.merge(c);
+
+			course.setCourseTitle(c.getCourseTitle());
+			course.setProfessor(c.getProfessor());
+
+			em.merge(course);
+
 			et.commit();
-			System.out.println(c.getCourseCode()+"bbb");
 			em.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return c;
 	}
 
@@ -219,23 +225,17 @@ public class CatalogManager implements CourseCatalog {
 		if (courseCode == null) {
 			throw new CourseNotFoundException("No course with null courseCode");
 		}
-//		if (courses.containsKey(courseCode)) {
-//			Course c = courses.get(courseCode);
-//			courses.remove(courseCode);
-//			return c;
-//		} else {
-//			throw new CourseNotFoundException("No course with code "
-//					+ courseCode);
-//		}
+
 		EntityManager em = emf.createEntityManager();
-		
+
 		Course c = em.find(Course.class, courseCode);
 		System.out.println(c.toString());
-		if(!em.contains(c)){
-			throw new CourseNotFoundException("No course with courseCode "+courseCode);
+		if (!em.contains(c)) {
+			throw new CourseNotFoundException("No course with courseCode "
+					+ courseCode);
 		}
 		try {
-			EntityTransaction et=em.getTransaction();
+			EntityTransaction et = em.getTransaction();
 			et.begin();
 			em.remove(c);
 			et.commit();
@@ -244,7 +244,7 @@ public class CatalogManager implements CourseCatalog {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return c;
 	}
 

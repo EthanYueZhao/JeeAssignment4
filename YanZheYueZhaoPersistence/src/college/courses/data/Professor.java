@@ -38,9 +38,24 @@ public class Professor implements Serializable {
 	public Professor() {
 	}
 
-	public Professor(String string, String string2) {
-		// TODO Auto-generated constructor stub
+
+
+	public Professor(String lastname, String firstname) {
+		super();
+		this.lastname = lastname;
+		this.firstname = firstname;
 	}
+
+
+
+	public Professor(int profid, String lastname, String firstname) {
+		super();
+		this.profid = profid;
+		this.lastname = lastname;
+		this.firstname = firstname;
+	}
+
+
 
 	public int getProfid() {
 		return this.profid;
