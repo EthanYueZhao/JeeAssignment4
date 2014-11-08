@@ -10,6 +10,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 
 import college.courses.data.Course;
 import college.courses.data.Professor;
@@ -142,14 +143,33 @@ public class CatalogManager implements CourseCatalog {
 		if (c == null) {
 			throw new DuplicateCourseException("Cannot add a null Course");
 		}
-		String code = c.getCourseCode();
-		if (courses.containsKey(code)) {
-			throw new DuplicateCourseException("Duplicate course code " + code);
-		}
-		if (c.getProfessor() != null) {
-			addProfessor(c.getProfessor());
-		}
-		courses.put(code, c);
+//		String code = c.getCourseCode();
+//		if (courses.containsKey(code)) {
+//			throw new DuplicateCourseException("Duplicate course code " + code);
+//		}
+//		if (c.getProfessor() != null) {
+//			addProfessor(c.getProfessor());
+//		}
+//		courses.put(code, c);
+		
+//		if(c.getProfessor()==null){
+//			Professor p=new Professor("no","name");
+//			c.setProfessor(p);
+//		}
+		
+		EntityManager em = emf.createEntityManager();
+		
+		System.out.println(c.getCourseCode()+"b");
+
+		EntityTransaction et=em.getTransaction();
+		et.begin();
+		System.out.println(c.getCourseCode()+"bb");
+		em.persist(c);
+		System.out.println(c.getCourseCode()+"bbb");
+		et.commit();
+		System.out.println(c.getCourseCode()+"bbbb");
+		em.close();
+		
 		return c;
 	}
 
@@ -164,13 +184,32 @@ public class CatalogManager implements CourseCatalog {
 			// no change - nothing to do
 			return c;
 		}
-		// insert changed course
-		if (oldC.getProfessor() != c.getProfessor()) {
-			addProfessor(c.getProfessor());
+//		// insert changed course
+//		if (oldC.getProfessor() != c.getProfessor()) {
+//			addProfessor(c.getProfessor());
+//		}
+//		courses.put(c.getCourseCode(), c);
+//		// retrieve again to get derived fields, if there are any
+//		return getCourse(c.getCourseCode());
+		
+		EntityManager em = emf.createEntityManager();
+		
+		System.out.println(c.getCourseCode()+"b");
+
+		try {
+			EntityTransaction et=em.getTransaction();
+			et.begin();
+			System.out.println(c.getCourseCode()+"bb");
+			em.merge(c);
+			et.commit();
+			System.out.println(c.getCourseCode()+"bbb");
+			em.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		courses.put(c.getCourseCode(), c);
-		// retrieve again to get derived fields, if there are any
-		return getCourse(c.getCourseCode());
+		
+		return c;
 	}
 
 	// Rewrite to use JPA API for assignment 4
@@ -180,14 +219,33 @@ public class CatalogManager implements CourseCatalog {
 		if (courseCode == null) {
 			throw new CourseNotFoundException("No course with null courseCode");
 		}
-		if (courses.containsKey(courseCode)) {
-			Course c = courses.get(courseCode);
-			courses.remove(courseCode);
-			return c;
-		} else {
-			throw new CourseNotFoundException("No course with code "
-					+ courseCode);
+//		if (courses.containsKey(courseCode)) {
+//			Course c = courses.get(courseCode);
+//			courses.remove(courseCode);
+//			return c;
+//		} else {
+//			throw new CourseNotFoundException("No course with code "
+//					+ courseCode);
+//		}
+		EntityManager em = emf.createEntityManager();
+		
+		Course c = em.find(Course.class, courseCode);
+		System.out.println(c.toString());
+		if(!em.contains(c)){
+			throw new CourseNotFoundException("No course with courseCode "+courseCode);
 		}
+		try {
+			EntityTransaction et=em.getTransaction();
+			et.begin();
+			em.remove(c);
+			et.commit();
+			em.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return c;
 	}
 
 	// Rewrite to use JPA API for assignment 4
