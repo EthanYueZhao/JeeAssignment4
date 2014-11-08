@@ -18,7 +18,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name="PROFESSOR", schema="COLLEGE")
+@Table(name="PROFESSOR")
 @NamedQuery(name="Professor.findAll", query="SELECT p FROM Professor p")
 public class Professor implements Serializable {
 	private static final long serialVersionUID = 1L;
