@@ -38,14 +38,13 @@
 								<option value="TBA" selected>Not assigned</option>
 							</c:when>
 							<c:otherwise>
-								<option value="${sessionScope.course.professor}" selected>${sessionScope.course.professor}
+								<option value="${sessionScope.course.professor.profid}" selected>${sessionScope.course.professor.firstname} ${sessionScope.course.professor.lastname}
 								</option>
 								<option value="TBA">Not assigned</option>
 							</c:otherwise>
 						</c:choose>
 						<c:forEach items="${requestScope.professors}" var="prof">
-							<option value="'${prof.firstname}'+'${prof.lastname}'"><c:out
-									value="'${prof.firstname}'+'${prof.lastname}'"/></option>
+							<option value="${prof.getProfid()}">${prof.getFirstname()} ${prof.getLastname()}</option>
 						</c:forEach>
 				</select></td>
 			</tr>

@@ -33,7 +33,7 @@ public class UpdateCourseServlet extends HttpServlet {
 	}
 	
 	private void updateBanner() {
-		CatalogManager cm = CatalogManager.getInstance();
+		CatalogManager cm = new CatalogManager();
 		int courseCount = cm.countCourses();
 		getServletContext().setAttribute("courseCount", courseCount);
 		Date lastUpdated = Calendar.getInstance().getTime();
@@ -55,13 +55,13 @@ public class UpdateCourseServlet extends HttpServlet {
 				String command = request.getParameter("submit");
 				switch ( command) {
 					case "Update": {
-						CatalogManager cm = CatalogManager.getInstance();
+						CatalogManager cm = new CatalogManager();
 						request.setAttribute("professors", cm.getProfessorList() );
 						request.getRequestDispatcher("/updateCourse.jsp").forward(request,  response);
 						return;
 						}	
 					case "Delete": {
-						CatalogManager cm = CatalogManager.getInstance();
+						CatalogManager cm = new CatalogManager();
 						cm.deleteCourse( course.getCourseCode() );
                         updateBanner();
 						request.getRequestDispatcher("/main.jsp").forward(request,  response);
@@ -94,8 +94,8 @@ public class UpdateCourseServlet extends HttpServlet {
 		if (profName == null || profName.equals("TBA")) {
 			course.setProfessor(null);
 		} else {
-			String names[] = profName.split(" ");
-			Professor professor = new Professor(names[0], names[1]);
+			
+			Professor professor = new Professor(Integer.parseInt(profName));
 			course.setProfessor(professor);
 		}
 		return course;
@@ -115,7 +115,7 @@ public class UpdateCourseServlet extends HttpServlet {
 			return;
 		}
 		try {
-			CatalogManager cm = CatalogManager.getInstance();
+			CatalogManager cm = new CatalogManager();
 			Course course = getCourseData(request);
 			cm.updateCourse(course);
 			request.getSession().setAttribute("course", course);

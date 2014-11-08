@@ -1,12 +1,13 @@
 package college.courses.data;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
@@ -24,7 +25,7 @@ public class Professor implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=IDENTITY)
 	private int profid;
 	@Column(name = "FAMILYNAME", nullable = false)
 	private String lastname;
@@ -36,6 +37,13 @@ public class Professor implements Serializable {
 	private List<Course> courses;
 
 	public Professor() {
+	}
+
+
+
+	public Professor(int profid) {
+		super();
+		this.profid = profid;
 	}
 
 
@@ -54,7 +62,6 @@ public class Professor implements Serializable {
 		this.lastname = lastname;
 		this.firstname = firstname;
 	}
-
 
 
 	public int getProfid() {

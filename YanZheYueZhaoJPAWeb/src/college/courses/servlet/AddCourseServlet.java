@@ -33,7 +33,7 @@ public class AddCourseServlet extends HttpServlet {
 	}
 
 	private void updateBanner() {
-		CatalogManager cm = CatalogManager.getInstance();
+		CatalogManager cm = new CatalogManager();
 		int courseCount = cm.countCourses();
 		getServletContext().setAttribute("courseCount", courseCount);
 		Date lastUpdated = Calendar.getInstance().getTime();
@@ -59,8 +59,8 @@ public class AddCourseServlet extends HttpServlet {
 		if (profName == null || profName.equals("TBA")) {
 			course.setProfessor(null);
 		} else {
-			String names[] = profName.split(" ");
-			Professor professor = new Professor(names[0], names[1]);
+			
+			Professor professor = new Professor(Integer.parseInt(profName));			
 			course.setProfessor(professor);
 		}
 		
@@ -76,7 +76,7 @@ public class AddCourseServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		try {
 			Course course = getCourseData(request);
-			CatalogManager cm = CatalogManager.getInstance();
+			CatalogManager cm = new CatalogManager();
 			
 			cm.addCourse(course);
 			session.setAttribute("course", course);

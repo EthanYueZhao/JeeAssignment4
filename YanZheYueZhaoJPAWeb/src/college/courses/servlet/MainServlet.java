@@ -47,7 +47,7 @@ public class MainServlet extends HttpServlet {
 		try {
 		switch ( command) {
 			case "Get": {
-				CatalogManager cm = CatalogManager.getInstance();
+				CatalogManager cm =new CatalogManager();
 				String code = request.getParameter("courseCode");
 				if ( code == null || code.isEmpty() ) {
 					throw new InvalidCommandException("code code cannot be empty");
@@ -58,7 +58,7 @@ public class MainServlet extends HttpServlet {
 				return;
 				}	
 			case "Add": {
-				CatalogManager cm = CatalogManager.getInstance();
+				CatalogManager cm =new CatalogManager();
 				request.setAttribute("professors", cm.getProfessorList());
 				request.getRequestDispatcher("/addCourse.jsp").forward(request, response);
 				return;

@@ -1355,3 +1355,538 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:35:53.148
 !MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+!SESSION 2014-11-08 11:43:02.556 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -showlocation
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:43:49.223
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:43:49.395
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:43:49.426
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-11-08 11:43:50.942
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-11-08 11:43:57.280
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 11:43:58.155
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 11:44:18.715
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:48:24.459
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:53:18.179
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:54:49.642
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 11:55:19.743
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 11:55:19.758
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 11:55:19.774
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:55:23.534
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:55:23.628
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 11:55:23.644
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 11:55:24.316
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 11:55:44.703
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:00:12.596
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:05:21.468
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:06:23.843
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:07:16.394
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:07:24.391
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:07:45.117
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 12:07:53.571
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:07:53.633
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:07:53.649
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:07:59.189
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:07:59.314
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:07:59.345
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 12:08:00.048
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 12:08:20.582
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:09:16.080
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 12:09:21.721
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:09:21.752
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:09:21.752
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:09:26.686
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:09:26.784
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:09:26.800
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 12:09:27.706
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 12:09:48.088
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:13:34.204
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:13:51.801
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:15:57.377
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:39:39.684
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:42:11.614
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 12:43:46.649
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:43:46.711
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:43:46.711
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:43:49.721
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:43:49.830
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:43:49.862
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 12:43:50.643
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 12:44:11.381
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:46:40.389
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:47:53.631
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:49:34.291
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:50:08.101
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:51:34.494
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:52:56.624
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 12:53:50.111
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:53:50.174
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:53:50.190
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:53:56.906
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:53:56.999
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:53:57.031
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 12:53:57.958
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:53:58.130
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 12:54:18.318
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:55:53.071
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 12:55:59.366
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:55:59.429
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 12:55:59.444
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:56:02.572
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:56:02.697
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 12:56:02.728
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 12:56:03.648
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 12:56:24.078
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:02:55.084
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:03:06.762
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:03:06.824
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:03:06.840
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:03:12.248
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:03:12.373
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:03:12.404
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:03:26.649
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:03:47.487
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:05:12.675
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:05:24.775
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:06:59.024
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:08:19.998
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:12:15.704
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:12:46.161
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:12:46.223
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:12:46.239
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:12:52.108
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:12:52.234
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:12:52.271
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:12:52.959
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:13:13.491
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:17:42.388
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:17:53.278
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:17:53.340
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:17:53.356
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:17:57.384
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:17:57.509
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:17:57.540
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:17:58.236
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:18:18.653
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:23:40.846
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:23:44.487
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:23:44.549
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:23:44.565
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:23:49.153
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:23:49.309
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:23:49.325
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:23:50.216
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:24:10.673
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:25:20.252
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:26:54.873
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:26:54.920
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:26:54.936
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:27:02.549
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:27:02.643
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:27:02.674
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:27:03.501
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:27:03.782
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:27:24.270
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-11-08 13:27:59.128
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:27:59.191
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:27:59.206
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-11-08 13:28:01.409
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-11-08 13:28:02.382
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:28:08.143
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:28:08.284
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:28:08.315
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-11-08 13:28:09.487
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-11-08 13:28:15.708
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:28:16.662
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:28:28.680
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:28:37.251
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:29:51.848
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:30:07.303
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:31:01.437
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:31:01.500
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:31:01.500
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:33:37.072
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:33:37.369
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:33:37.400
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:33:38.213
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:33:58.587
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:34:45.623
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:35:41.013
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:35:49.505
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:36:00.001
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:36:14.233
+!MESSAGE 5 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:36:31.188
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:37:10.371
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:37:25.283
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:37:42.444
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:38:00.898
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:38:10.913
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:38:27.048
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:38:38.095
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:38:47.548
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:38:58.922
+!MESSAGE 1 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY unknown 0 0 2014-11-08 13:39:07.172
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:39:07.241
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-11-08 13:39:07.241
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:39:11.288
+!MESSAGE Module JeeAssignment4EAR published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:39:11.413
+!MESSAGE Module YanZheYueZhaoJPAWeb published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:39:11.444
+!MESSAGE Module YanZheYueZhaoPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-11-08 13:39:12.269
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-11-08 13:39:32.765
+!MESSAGE Module YanZheYueZhaoJPAWeb on JBoss 7.1 Runtime Server still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:40:28.162
+!MESSAGE 11 files modified in module YanZheYueZhaoJPAWeb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-11-08 13:40:28.193
+!MESSAGE Module YanZheYueZhaoPersistence published without error.

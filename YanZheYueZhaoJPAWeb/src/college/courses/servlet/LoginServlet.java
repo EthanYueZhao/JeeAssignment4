@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		CatalogManager cm = CatalogManager.getInstance();
+		CatalogManager cm =new CatalogManager();
 		int courseCount = cm.countCourses();
 		getServletContext().setAttribute("courseCount", courseCount);
 		Date lastUpdated = Calendar.getInstance().getTime();
